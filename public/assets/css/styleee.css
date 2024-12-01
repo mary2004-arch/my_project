@@ -1,0 +1,141 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #4a4e69;
+  height: 100vh;
+  position: fixed;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.sidebar .menu-list .menu-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 15px 10px;
+  cursor: pointer;
+  width: 80%;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+.sidebar .menu-list .menu-btn:hover,
+.sidebar .menu-list .menu-btn.active {
+  background: #6a6f8c;
+  border-radius: 5px;
+}
+
+.sidebar .logout-btn {
+  margin-top: auto;
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar .logout-btn:hover {
+  background: #d62839;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 240px;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #4a4e69;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: #4a4e69;
+}
+
+.card p {
+  font-size: 2rem;
+  color: #333;
+}
+/* Profile menu */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-menu {
+  position: relative;
+}
+
+.profile-icon {
+  font-size: 2rem;
+  color: #4a4e69;
+  cursor: pointer;
+}
+
+.profile-menu .dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.profile-menu:hover .dropdown {
+  display: block;
+}
+
+.profile-menu .dropdown button {
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: #333;
+}
+
+.profile-menu .dropdown button:hover {
+  background: #f4f6f9;
+}

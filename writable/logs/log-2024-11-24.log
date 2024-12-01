@@ -1,0 +1,190 @@
+ERROR - 2024-11-24 18:06:54 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/MySQLi/Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'todo_list', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/my_project/app/Controllers/TestController.php(15): CodeIgniter\Database\BaseConnection->query('SELECT VERSION(...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(933): App\Controllers\TestController->index()
+#5 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+#6 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 /Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/rewrite.php(44): require_once('/Applications/X...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/my_project/app/Controllers/TestController.php(15): CodeIgniter\Database\BaseConnection->query('SELECT VERSION(...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(933): App\Controllers\TestController->index()
+#4 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/rewrite.php(44): require_once('/Applications/X...')
+#10 {main}
+CRITICAL - 2024-11-24 18:06:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: test]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TestController.php(15): CodeIgniter\Database\BaseConnection->query('SELECT VERSION()')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\TestController->index()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+ERROR - 2024-11-24 18:07:46 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/MySQLi/Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'todo_list', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/my_project/app/Controllers/TestController.php(15): CodeIgniter\Database\BaseConnection->query('SELECT VERSION(...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(933): App\Controllers\TestController->index()
+#5 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+#6 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 /Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/rewrite.php(44): require_once('/Applications/X...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/my_project/app/Controllers/TestController.php(15): CodeIgniter\Database\BaseConnection->query('SELECT VERSION(...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(933): App\Controllers\TestController->index()
+#4 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/rewrite.php(44): require_once('/Applications/X...')
+#10 {main}
+CRITICAL - 2024-11-24 18:07:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: test]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TestController.php(15): CodeIgniter\Database\BaseConnection->query('SELECT VERSION()')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\TestController->index()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+ERROR - 2024-11-24 18:08:19 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/MySQLi/Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'todo_list', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/my_project/app/Controllers/TestController.php(15): CodeIgniter\Database\BaseConnection->query('SELECT VERSION(...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(933): App\Controllers\TestController->index()
+#5 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+#6 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 /Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/rewrite.php(44): require_once('/Applications/X...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/my_project/app/Controllers/TestController.php(15): CodeIgniter\Database\BaseConnection->query('SELECT VERSION(...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(933): App\Controllers\TestController->index()
+#4 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/rewrite.php(44): require_once('/Applications/X...')
+#10 {main}
+CRITICAL - 2024-11-24 18:08:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: test]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TestController.php(15): CodeIgniter\Database\BaseConnection->query('SELECT VERSION()')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\TestController->index()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+CRITICAL - 2024-11-24 18:17:16 --> ParseError: syntax error, unexpected identifier "auth", expecting ")"
+[Method: GET, Route: auth]
+in APPPATH/Views/auth.php on line 25.
+ 1 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('auth', [], true)
+ 3 APPPATH/Controllers/AuthController.php(17): view('auth')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+CRITICAL - 2024-11-24 18:17:18 --> ParseError: syntax error, unexpected identifier "auth", expecting ")"
+[Method: GET, Route: auth]
+in APPPATH/Views/auth.php on line 25.
+ 1 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('auth', [], true)
+ 3 APPPATH/Controllers/AuthController.php(17): view('auth')
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\AuthController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+ERROR - 2024-11-24 19:35:03 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/MySQLi/Connection.php:186
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/MySQLi/Connection.php(186): mysqli->real_connect('localhost', '', Object(SensitiveParameterValue), 'todo_list', 3306, '', 0)
+#1 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Applications/XAMPP/xamppfiles/htdocs/my_project/app/Controllers/TestController.php(15): CodeIgniter\Database\BaseConnection->query('SELECT VERSION(...')
+#4 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(933): App\Controllers\TestController->index()
+#5 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+#6 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#8 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 /Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/rewrite.php(44): require_once('/Applications/X...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Applications/XAMPP/xamppfiles/htdocs/my_project/app/Controllers/TestController.php(15): CodeIgniter\Database\BaseConnection->query('SELECT VERSION(...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(933): App\Controllers\TestController->index()
+#4 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+#5 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(325): CodeIgniter\CodeIgniter->run()
+#7 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 /Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 /Applications/XAMPP/xamppfiles/htdocs/my_project/system/rewrite.php(44): require_once('/Applications/X...')
+#10 {main}
+CRITICAL - 2024-11-24 19:35:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+[Method: GET, Route: test]
+in SYSTEMPATH/Database/BaseConnection.php on line 467.
+ 1 SYSTEMPATH/Database/BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Controllers/TestController.php(15): CodeIgniter\Database\BaseConnection->query('SELECT VERSION()')
+ 3 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\TestController->index()
+ 4 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TestController))
+ 5 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
