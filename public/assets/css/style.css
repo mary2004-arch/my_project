@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;  /* Changed to white */
+    padding: 15px 30px;
+    color: #333;  /* Updated text color for better contrast */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.tab {
+    padding: 12px 24px;
+    cursor: pointer;
+    background-color: #C27BA0;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+}
+
+.tab.active {
+    background-color: #A8A3D1;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab:hover {
+    background-color: #7B9BD9;
+    transform: scale(1.05);
+}
+
+.todo-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.todo-container:hover {
+    transform: translateY(-5px);
+}
+
+.profile-menu {
+    position: relative;
+    cursor: pointer;
+}
+
+.profile-icon {
+    font-size: 32px;
+    color: #A8A3D1;
+    transition: color 0.3s ease;
+}
+
+.profile-icon:hover {
+    color: #7B9BD9;
+}
+
+.dropdown {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.dropdown button {
+    background-color: #C27BA0;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown button:hover {
+    background-color: #DD91C0;
+}
+
+.profile-menu:hover .dropdown {
+    display: block;
+}

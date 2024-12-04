@@ -2,68 +2,35 @@
 
 namespace App\Controllers;
 
-use App\Models\DashboardModel;
+use App\Models\UserModel;
 
 class DasController extends BaseController
 {
     public function index()
     {
-        $model = new DashboardModel();
-
-        // Fetching data from the database
-        $admins = $model->countByRole('Admin');
-        $users = $model->countByRole('User');
-        $activeUsers = $model->countActiveUsers();
-
-        // Pass data to the dashboard view
-        return view('dashboard', [
-            'admins' => $admins,
-            'users' => $users,
-            'activeUsers' => $activeUsers
-        ]);
+        return view('dashboard');
     }
 
-    public function manageUsers()
-    {
-        $model = new DashboardModel();
-
-        // Fetch all users
-        $users = $model->findAll();
-
-        return view('manage_users', ['users' => $users]);
-    }
-
+    // Add user handling
     public function addUser()
     {
-        $model = new DashboardModel();
-
-        $data = $this->request->getPost();
-        $model->insert($data);
-
-        return redirect()->to('/manage-users');
+        $userModel = new UserModel();
+        $userModel->save([
+            'name' => $this->request->getVar('name'),
+            'email' => $this->request->getVar('email'),
+            'role' => $this->request->getVar('role'),
+        ]);
+        return redirect()->to('/dashboard');
     }
 
-    public function editUser($id)
+    // Get all users
+    public function getUsers()
     {
-        $model = new DashboardModel();
-
-        if ($this->request->getMethod() === 'post') {
-            $data = $this->request->getPost();
-            $model->update($id, $data);
-
-            return redirect()->to('/manage-users');
-        }
-
-        $user = $model->find($id);
-
-        return view('edit_user', ['user' => $user]);
+        $userModel = new UserModel();
+        $data['users'] = $userModel->findAll();
+        return view('users', $data);
     }
 
-    public function deleteUser($id)
-    {
-        $model = new DashboardModel();
-        $model->delete($id);
 
-        return redirect()->to('/manage-users');
-    }
+
 }

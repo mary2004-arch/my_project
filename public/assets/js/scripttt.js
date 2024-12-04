@@ -1,92 +1,133 @@
-// 1. Graphiques du tableau de bord
-const ctxBar = document.getElementById('userChart').getContext('2d');
-new Chart(ctxBar, {
-    type: 'bar',
-    data: {
-        labels: ['Janvier', 'Février', 'Mars'], // Ajoutez des mois dynamiques si nécessaire
-        datasets: [{
-            label: 'Utilisateurs actifs',
-            data: [10, 20, 15], // Remplacez par des données dynamiques
-            backgroundColor: 'rgba(75, 192, 192, 0.5)'
-        }]
-    }
-});
+// Show Dashboard Content
+function showDashboard() {
+    document.getElementById("content").innerHTML = `
+        <h4>Bienvenue sur le tableau de bord principal. Sélectionnez une option dans la barre latérale.</h4>
+    `;
+    document.getElementById("page-title").textContent = "Accueil";
+}
+function toggleDropdown() {
+    const dropdown = document.getElementById('dropdownMenu');
+    dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+}
 
-const ctxCircle = document.getElementById('roleChart').getContext('2d');
-new Chart(ctxCircle, {
-    type: 'doughnut',
-    data: {
-        labels: ['Admins', 'Utilisateurs'],
-        datasets: [{
-            data: [10, 90], // Remplacez par des données dynamiques
-            backgroundColor: ['#FF6384', '#36A2EB']
-        }]
-    }
-});
+function logout() {
+    // Display the alert
+    alert("You have logged out.");
+    
+    // Redirect the user to the backend logout endpoint
+    window.location.href = '/auth'; // Replace with your actual logout URL
+}
 
-// 2. Recherche dans le tableau des utilisateurs
-document.getElementById('searchBar').addEventListener('keyup', function () {
-    const searchTerm = this.value.toLowerCase();
-    const rows = document.querySelectorAll('#usersTable tbody tr');
-    rows.forEach(row => {
-        const text = row.innerText.toLowerCase();
-        row.style.display = text.includes(searchTerm) ? '' : 'none';
+// Show Users Section with Table and Form
+function showUsers() {
+    document.getElementById("content").innerHTML = `
+        <h3>Gérer les utilisateurs</h3>
+        <form action="/addUser" method="post">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <select name="role">
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+            </select>
+            <button type="submit">Ajouter</button>
+        </form>
+        <input type="text" id="searchBar" placeholder="Rechercher un utilisateur...">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom</th>
+                    <th>Email</th>
+                    <th>Rôle</th>
+                </tr>
+            </thead>
+            <tbody id="userTable">
+                <!-- Data will be populated dynamically -->
+            </tbody>
+        </table>
+    `;
+    document.getElementById("page-title").textContent = "Gérer les utilisateurs";
+}
+
+
+function showStats() {
+    document.getElementById("content").innerHTML = `
+        <h3>Statistiques</h3>
+        <canvas id="userChart"></canvas><br><br><br>
+        <canvas id="roleChart"></canvas>
+    `;
+    document.getElementById("page-title").textContent = "Statistiques";
+    renderCharts();
+}
+
+function show() {
+    document.getElementById("content").innerHTML = '<canvas id="userChart"></canvas>';
+
+    // Code pour afficher un graphique (exemple avec Chart.js)
+    const ctx = document.getElementById('userChart').getContext('2d');
+    const chart = new Chart(ctx, {
+        type: 'bar', // ou 'line', 'pie', etc.
+        data: {
+            labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai'],
+            datasets: [{
+                label: 'Exemple de données',
+                data: [10, 20, 30, 40, 50],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+            },
+        }
     });
-});
+}
+document.addEventListener("DOMContentLoaded", show);
 
-// 3. Gestion des formulaires
-function showAddUserForm() {
-    document.getElementById('formTitle').innerText = 'Ajouter un utilisateur';
-    document.getElementById('userForm').reset();
-    document.getElementById('userId').value = '';
-    document.getElementById('userFormModal').classList.remove('hidden');
+// Appeler la fonction automatiquement après le chargement de la page
+
+
+function renderCharts() {
+    const userChart = new Chart(document.getElementById("userChart"), {
+        type: 'bar', // ou 'line', 'pie', etc.
+        data: {
+            labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai'],
+            datasets: [{
+                label: 'Exemple de données',
+                data: [10, 20, 30, 40, 50],
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+            },
+        }
+    });
+    const roleChart = new Chart(document.getElementById("roleChart"), {
+        type: "pie",
+        data: {
+            labels: ["Admins", "Users"],
+            datasets: [{
+                data: [3, 7], // Example data
+                backgroundColor: [" #C27BA0", "#A8A3D1"]
+            }]
+        },
+        options: { responsive: true }
+    });
+
+    
 }
 
-function showEditUserForm(userId) {
-    // Remplacez avec un appel AJAX pour charger les détails de l'utilisateur
-    const userData = { id: userId, name: 'John Doe', email: 'john@example.com', role: 'User', active: 1 }; // Exemple
-    document.getElementById('formTitle').innerText = 'Modifier un utilisateur';
-    document.getElementById('userId').value = userData.id;
-    document.getElementById('name').value = userData.name;
-    document.getElementById('email').value = userData.email;
-    document.getElementById('role').value = userData.role;
-    document.getElementById('active').value = userData.active;
-    document.getElementById('userFormModal').classList.remove('hidden');
-}
 
-function deleteUser(userId) {
-    if (confirm('Êtes-vous sûr de vouloir supprimer cet utilisateur ?')) {
-        // Ajoutez une requête AJAX pour supprimer l'utilisateur
-        alert(`Utilisateur ${userId} supprimé !`);
-    }
-}
 
-function closeModal() {
-    document.getElementById('userFormModal').classList.add('hidden');
-}
-// Fonction pour filtrer les utilisateurs dans le tableau
-function searchTable() {
-  var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("searchInput");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("usersTable");
-  tr = table.getElementsByTagName("tr");
-
-  for (i = 1; i < tr.length; i++) {
-      td = tr[i].getElementsByTagName("td");
-      if (td) {
-          var matchFound = false;
-          for (var j = 0; j < td.length; j++) {
-              if (td[j].textContent.toUpperCase().indexOf(filter) > -1) {
-                  matchFound = true;
-                  break;
-              }
-          }
-          if (matchFound) {
-              tr[i].style.display = "";
-          } else {
-              tr[i].style.display = "none";
-          }
-      }
-  }
-}

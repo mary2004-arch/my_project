@@ -22,3 +22,13 @@ $routes->get('da', 'DasController::index');
 $routes->get('showname/(:any)', 'Home::showname/$1');
 
 
+$routes->get('dashboard', 'DasController::index');
+$routes->post('addUser', 'DasController::addUser');
+$routes->get('users', 'DasController::getUsers');
+
+
+$routes->get('/Tache', 'TacheController::index'); // Pour afficher la liste des tâches
+$routes->post('/Tache/createTask', 'TacheController::createTask'); // Pour ajouter une tâche
+$routes->post('/Tache/deleteTask/(:num)', 'TacheController::deleteTask/$1');
+$routes->post('/logout', 'TacheController::logout');
+
