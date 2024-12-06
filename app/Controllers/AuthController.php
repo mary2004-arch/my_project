@@ -25,13 +25,13 @@ class AuthController extends BaseController
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
     
-        // Validation de l'utilisateur
+       
         $user = $this->userModel->validateUser($email, $password);
     
         if ($user) {
-            // Vérification du mot de passe (si haché)
-            if (password_verify($password, $user['mot_de_passe'])) {  // Utilisez mot_de_passe ici
-                // Stocker les informations utilisateur dans la session
+        
+            if (password_verify($password, $user['mot_de_passe'])) {  
+             
                 session()->set('user', [
                     'id' => $user['id'],
                     'email' => $user['email'],
@@ -39,7 +39,7 @@ class AuthController extends BaseController
                     'is_logged_in' => true,
                 ]);
     
-                // Redirection basée sur le rôle
+    
                 if ($user['role'] === 'admin') {
                     return redirect()->to('/da');
                 } elseif ($user['role'] === 'user') {

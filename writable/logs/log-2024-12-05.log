@@ -9185,3 +9185,659 @@ WARNING - 2024-12-05 20:40:40 --> [DEPRECATED] Creation of dynamic property App\
  6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
 INFO - 2024-12-05 20:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 21:13:41 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 21:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 21:13:56 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 21:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 21:21:09 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 21:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 21:21:18 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 21:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-05 22:00:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "edit_user.php"
+[Method: GET, Route: editUser/1]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_user.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('edit_user', [], true)
+ 3 APPPATH/Controllers/DasController.php(35): view('edit_user', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\DasController->editUser('1')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DasController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+WARNING - 2024-12-05 22:18:59 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 22:18:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 22:19:13 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 22:19:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-12-05 22:19:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "edit_user.php"
+[Method: GET, Route: editUser/14]
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 41.
+ 1 SYSTEMPATH/View/View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_user.php')
+ 2 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('edit_user', [], true)
+ 3 APPPATH/Controllers/DasController.php(35): view('edit_user', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\DasController->editUser('14')
+ 5 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DasController))
+ 6 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+CRITICAL - 2024-12-05 22:32:06 --> ErrorException: Undefined variable $tache
+[Method: GET, Route: dashboard]
+in APPPATH/Views/dashboard.php on line 89.
+ 1 APPPATH/Views/dashboard.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tache', '/Applications/XAMPP/xamppfiles/htdocs/my_project/app/Views/dashboard.php', 89)
+ 2 SYSTEMPATH/View/View.php(234): include('/Applications/XAMPP/xamppfiles/htdocs/my_project/app/Views/dashboard.php')
+ 3 SYSTEMPATH/View/View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1171): CodeIgniter\View\View->render('dashboard', [], true)
+ 5 APPPATH/Controllers/DasController.php(14): view('dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\DasController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DasController))
+ 8 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+WARNING - 2024-12-05 23:54:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:55:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:55:17 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:55:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:55:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:55:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:55:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:55:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:55:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\AuthController::$userModel is deprecated in APPPATH/Controllers/AuthController.php on line 12.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\AuthController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:58:14 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-05 23:58:15 --> Fetched goals: Array
+(
+    [0] => Array
+        (
+            [id] => 12
+            [user_id] => 14
+            [text] => Drink 3L water everyday
+            [completed] => 0
+            [created_at] => 2024-12-05 16:21:59
+        )
+
+    [1] => Array
+        (
+            [id] => 13
+            [user_id] => 14
+            [text] => Workout
+            [completed] => 0
+            [created_at] => 2024-12-05 16:22:13
+        )
+
+    [2] => Array
+        (
+            [id] => 14
+            [user_id] => 14
+            [text] => sleep 8h
+            [completed] => 0
+            [created_at] => 2024-12-05 16:48:29
+        )
+
+    [3] => Array
+        (
+            [id] => 15
+            [user_id] => 14
+            [text] => healthy life
+            [completed] => 0
+            [created_at] => 2024-12-05 21:39:11
+        )
+
+)
+
+WARNING - 2024-12-05 23:58:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:58:20 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-05 23:58:20 --> Fetched goals: Array
+(
+    [0] => Array
+        (
+            [id] => 12
+            [user_id] => 14
+            [text] => Drink 3L water everyday
+            [completed] => 0
+            [created_at] => 2024-12-05 16:21:59
+        )
+
+    [1] => Array
+        (
+            [id] => 13
+            [user_id] => 14
+            [text] => Workout
+            [completed] => 0
+            [created_at] => 2024-12-05 16:22:13
+        )
+
+    [2] => Array
+        (
+            [id] => 14
+            [user_id] => 14
+            [text] => sleep 8h
+            [completed] => 0
+            [created_at] => 2024-12-05 16:48:29
+        )
+
+)
+
+WARNING - 2024-12-05 23:58:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:58:35 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-05 23:58:35 --> Fetched goals: Array
+(
+    [0] => Array
+        (
+            [id] => 12
+            [user_id] => 14
+            [text] => Drink 3L water everyday
+            [completed] => 0
+            [created_at] => 2024-12-05 16:21:59
+        )
+
+    [1] => Array
+        (
+            [id] => 13
+            [user_id] => 14
+            [text] => Workout
+            [completed] => 0
+            [created_at] => 2024-12-05 16:22:13
+        )
+
+    [2] => Array
+        (
+            [id] => 14
+            [user_id] => 14
+            [text] => sleep 8h
+            [completed] => 0
+            [created_at] => 2024-12-05 16:48:29
+        )
+
+    [3] => Array
+        (
+            [id] => 16
+            [user_id] => 14
+            [text] => Project Done
+            [completed] => 0
+            [created_at] => 2024-12-06 00:58:35
+        )
+
+)
+
+WARNING - 2024-12-05 23:58:37 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:58:38 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-05 23:58:38 --> Fetched goals: Array
+(
+    [0] => Array
+        (
+            [id] => 12
+            [user_id] => 14
+            [text] => Drink 3L water everyday
+            [completed] => 0
+            [created_at] => 2024-12-05 16:21:59
+        )
+
+    [1] => Array
+        (
+            [id] => 13
+            [user_id] => 14
+            [text] => Workout
+            [completed] => 0
+            [created_at] => 2024-12-05 16:22:13
+        )
+
+    [2] => Array
+        (
+            [id] => 14
+            [user_id] => 14
+            [text] => sleep 8h
+            [completed] => 0
+            [created_at] => 2024-12-05 16:48:29
+        )
+
+    [3] => Array
+        (
+            [id] => 16
+            [user_id] => 14
+            [text] => Project Done
+            [completed] => 1
+            [created_at] => 2024-12-06 00:58:35
+        )
+
+)
+
+WARNING - 2024-12-05 23:58:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:58:42 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-05 23:58:42 --> Fetched goals: Array
+(
+    [0] => Array
+        (
+            [id] => 13
+            [user_id] => 14
+            [text] => Workout
+            [completed] => 0
+            [created_at] => 2024-12-05 16:22:13
+        )
+
+    [1] => Array
+        (
+            [id] => 14
+            [user_id] => 14
+            [text] => sleep 8h
+            [completed] => 0
+            [created_at] => 2024-12-05 16:48:29
+        )
+
+    [2] => Array
+        (
+            [id] => 16
+            [user_id] => 14
+            [text] => Project Done
+            [completed] => 1
+            [created_at] => 2024-12-06 00:58:35
+        )
+
+)
+
+WARNING - 2024-12-05 23:58:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:58:46 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-05 23:58:46 --> Fetched goals: Array
+(
+    [0] => Array
+        (
+            [id] => 14
+            [user_id] => 14
+            [text] => sleep 8h
+            [completed] => 0
+            [created_at] => 2024-12-05 16:48:29
+        )
+
+    [1] => Array
+        (
+            [id] => 16
+            [user_id] => 14
+            [text] => Project Done
+            [completed] => 1
+            [created_at] => 2024-12-06 00:58:35
+        )
+
+)
+
+WARNING - 2024-12-05 23:58:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:58:47 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-05 23:58:47 --> Fetched goals: Array
+(
+    [0] => Array
+        (
+            [id] => 16
+            [user_id] => 14
+            [text] => Project Done
+            [completed] => 1
+            [created_at] => 2024-12-06 00:58:35
+        )
+
+)
+
+WARNING - 2024-12-05 23:58:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:58:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-05 23:58:57 --> Fetched goals: Array
+(
+    [0] => Array
+        (
+            [id] => 16
+            [user_id] => 14
+            [text] => Project Done
+            [completed] => 1
+            [created_at] => 2024-12-06 00:58:35
+        )
+
+    [1] => Array
+        (
+            [id] => 17
+            [user_id] => 14
+            [text] => 10 Rosseta
+            [completed] => 0
+            [created_at] => 2024-12-06 00:58:57
+        )
+
+)
+
+WARNING - 2024-12-05 23:59:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:59:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-05 23:59:16 --> Fetched goals: Array
+(
+    [0] => Array
+        (
+            [id] => 17
+            [user_id] => 14
+            [text] => 10 Rosseta
+            [completed] => 0
+            [created_at] => 2024-12-06 00:58:57
+        )
+
+)
+
+WARNING - 2024-12-05 23:59:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:59:16 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-05 23:59:16 --> Fetched goals: Array
+(
+)
+
+WARNING - 2024-12-05 23:59:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:59:40 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-05 23:59:40 --> Fetched goals: Array
+(
+    [0] => Array
+        (
+            [id] => 18
+            [user_id] => 14
+            [text] => 10 Rosetta
+            [completed] => 0
+            [created_at] => 2024-12-06 00:59:40
+        )
+
+)
+
+WARNING - 2024-12-05 23:59:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-12-05 23:59:43 --> [DEPRECATED] Creation of dynamic property App\Controllers\GoalController::$goalModel is deprecated in APPPATH/Controllers/GoalController.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(903): App\Controllers\GoalController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(500): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH/Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH/index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH/rewrite.php(44): require_once('/Applications/XAMPP/xamppfiles/htdocs/my_project/public/index.php')
+INFO - 2024-12-05 23:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2024-12-05 23:59:44 --> Fetched goals: Array
+(
+    [0] => Array
+        (
+            [id] => 18
+            [user_id] => 14
+            [text] => 10 Rosetta
+            [completed] => 1
+            [created_at] => 2024-12-06 00:59:40
+        )
+
+)
+
