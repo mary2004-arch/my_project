@@ -24,8 +24,6 @@
       <div class="form-inner">
         
       
-
-        <!-- Formulaire de Login -->
         <form action="<?= base_url('auth/validate_login') ?>" method="POST" class="login">
           <div class="field">
             <input type="text" name="email" placeholder="Email Address" required>
@@ -33,7 +31,6 @@
           <div class="field">
             <input type="password" name="password" placeholder="Password" required>
           </div>
-            <!-- Affichage des messages d'erreur ou de succès -->
         <?php if (session()->getFlashdata('error')): ?>
           <div class="alert alert-danger">
             <?= session()->getFlashdata('error') ?>
@@ -45,7 +42,8 @@
             <?= session()->getFlashdata('success') ?>
           </div>
         <?php endif; ?>
-          <div class="pass-link"><a href="#">Forgot password?</a></div>
+        <div class="pass-link"><a href="<?= base_url('auth/forgot_password') ?>">Forgot password?</a></div>
+
           <div class="field btn">
             <div class="btn-layer"></div>
             <input type="submit" value="Login">
@@ -53,7 +51,7 @@
           <div class="signup-link">Not a member? <a href="">Signup now</a></div>
         </form>
 
-        <!-- Formulaire d'inscription -->
+
         <form action="<?= base_url('auth/validate_register') ?>" method="POST" class="signup">
           <div class="field">
             <input type="text" name="email" placeholder="Email Address" required>
@@ -71,6 +69,8 @@
         </form>
       </div>
     </div>
+  
+
      
   </div>
 

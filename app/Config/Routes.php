@@ -23,6 +23,7 @@ $routes->get('users', 'DasController::getUsers');
 
 
 
+$routes->get('/da', 'DasController::index');
 
 
 $routes->post('/logout', 'TacheController::logout');
@@ -54,3 +55,14 @@ $routes->post('/updateUser/(:num)', 'DasController::updateUser/$1');
 $routes->get('/deleteUser/(:num)', 'DasController::deleteUser/$1');
 $routes->post('/updateUserRole/(:num)', 'DasController::updateUserRole/$1');
 $routes->get('DasController/getRoleData', 'DasController::getRoleData');
+$routes->get('auth/forgot_password', 'AuthController::forgot_password');
+$routes->post('auth/process_forgot_password', 'AuthController::process_forgot_password');
+
+
+$routes->get('/auth', 'AuthController::index');
+$routes->post('/auth/validate_login', 'AuthController::validate_login');
+$routes->post('/auth/validate_register', 'AuthController::validate_register');
+$routes->get('/auth/forgot_password', 'AuthController::forgot_password');
+$routes->post('/auth/process_forgot_password', 'AuthController::process_forgot_password');
+$routes->get('/auth/reset_password/(:any)', 'AuthController::reset_password/$1');
+$routes->post('/auth/process_reset_password', 'AuthController::process_reset_password');

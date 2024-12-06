@@ -16,10 +16,9 @@ class DashboardModel extends Model
         'deleted_at',
     ];
 
-    protected $useSoftDeletes = true; // Enable Soft Deletes
+    protected $useSoftDeletes = true; 
     protected $deletedField = 'deleted_at';
 
-    // Fetch all users or search by keyword
     public function searchUsers($keyword = null)
     {
         if ($keyword) {
@@ -30,19 +29,19 @@ class DashboardModel extends Model
         return $this->findAll();
     }
 
-    // Get user by ID
+
     public function getUserById($id)
     {
         return $this->find($id);
     }
 
-    // Update user
+   
     public function updateUser($id, $data)
     {
         return $this->update($id, $data);
     }
 
-    // Delete user (Soft Delete)
+
     public function deleteUser($id)
     {
         return $this->delete($id);

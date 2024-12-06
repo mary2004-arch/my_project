@@ -13,8 +13,6 @@ class DasController extends BaseController
         $data['users'] = $userModel->searchUsers($keyword);
         $adminCount = $userModel->where('role', 'admin')->countAllResults();
         $userCount = $userModel->where('role', 'user')->countAllResults();
-
-    // Pass data to the view
     $data['roleData'] = [
         'admin' => $adminCount,
         'user' => $userCount,
@@ -22,7 +20,7 @@ class DasController extends BaseController
         return view('dashboard', $data);
     }
 
-    // Add User
+
     public function addUser()
     {
         $userModel = new DashboardModel();
@@ -30,12 +28,12 @@ class DasController extends BaseController
             'email' => $this->request->getPost('email'),
             'role' => $this->request->getPost('role'),
             'date_inscription' => date('Y-m-d H:i:s'),
-            'active' => 1, // Default active status
+            'active' => 1, 
         ]);
         return redirect()->to('/dashboard');
     }
 
-    // Edit User
+
     public function editUser($id)
     {
         $userModel = new DashboardModel();
@@ -53,7 +51,7 @@ class DasController extends BaseController
         return redirect()->to('/dashboard');
     }
 
-    // Delete User
+
     public function deleteUser($id)
     {
         $userModel = new DashboardModel();
@@ -65,7 +63,6 @@ class DasController extends BaseController
         $userModel = new DashboardModel();
         $newRole = $this->request->getPost('role');
         
-        // Update the role of the user
         $userModel->update($id, ['role' => $newRole]);
         
         return $this->response->setJSON(['success' => true]);
