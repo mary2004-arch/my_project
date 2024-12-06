@@ -90,22 +90,21 @@ class AuthController extends BaseController
     {
         $email = $this->request->getPost('email');
 
-        // Check if the email exists in the database
+
         $user = $this->userModel->getUserByEmail($email);
         if (!$user) {
             session()->setFlashdata('error', 'Email address not found.');
             return redirect()->to('/auth/forgot_password');
         }
 
-        // Generate a reset token and send it to the user's email
+       
         $token = bin2hex(random_bytes(16));
         $this->userModel->storePasswordResetToken($email, $token);
 
-        // Create a reset link
+    
         $resetLink = base_url("auth/reset_password/$token");
         $message = "Click the following link to reset your password: <a href='$resetLink'>$resetLink</a>";
 
-        // Send email
         $emailService = \Config\Services::email();
         $emailService->setTo($email);
         $emailService->setSubject('Password Reset');
@@ -150,11 +149,11 @@ class AuthController extends BaseController
             return redirect()->to('/auth');
         }
 
-        // Update the user's password
+
         $hashedPassword = password_hash($newPassword, PASSWORD_BCRYPT);
         $this->userModel->updatePassword($user['email'], $hashedPassword);
 
-        // Clear the reset token
+
         $this->userModel->clearResetToken($token);
 
         session()->setFlashdata('success', 'Password reset successfully. You can now log in.');

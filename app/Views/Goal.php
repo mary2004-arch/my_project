@@ -21,7 +21,7 @@
         <div class="profile-menu">
             <i class="fas fa-user-circle profile-icon" onclick="toggleDropdown()"></i>
             <div class="dropdown" id="dropdownMenu" style="display: none;">
-                <button onclick="logout()">Déconnexion</button>
+                <button onclick="logout()">logout</button>
             </div>
         </div>
     </header>

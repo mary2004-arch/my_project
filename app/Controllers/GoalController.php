@@ -21,6 +21,8 @@ class GoalController extends BaseController
         }
     
         $goals = $this->goalModel->getUserGoals($userId);
+        $goals = $this->goalModel->where('user_id', $userId)->findAll();
+
     
 
         log_message('debug', 'Fetched goals: ' . print_r($goals, true));

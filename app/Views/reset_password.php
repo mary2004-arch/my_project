@@ -16,7 +16,6 @@
       <form action="<?= base_url('auth/process_reset_password') ?>" method="POST" class="reset-password">
         <h2>Reset Password</h2>
 
-        <!-- Hidden input for the token -->
         <input type="hidden" name="token" value="<?= esc($token); ?>">
 
         <div class="field">

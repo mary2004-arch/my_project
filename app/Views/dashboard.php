@@ -41,7 +41,6 @@
       </div>
     </header>
 
-    <!-- Sections -->
     <section id="dashboard" class="content-section">
   <h3>Welcome to the main dashboard, This chart provides a statistical overview of the number of admins and users in the system !</h3>
   <div style="width: 100%; margin: auto;">
@@ -64,14 +63,14 @@
 
 
 
-  <!-- Search Bar -->
+
   <div class="search-container">
   
   <input type="text" id="searchBar" placeholder="Search a user..." oninput="searchUser(this.value)">
   <i class="fas fa-search search-icon"></i>
 </div>
 
-  <!-- Users Table -->
+  
   <table>
     <thead>
       <tr>
@@ -114,13 +113,13 @@
     </section>
 
     <script>
-  // Pass PHP data to JavaScript
+ 
   const roleData = <?= json_encode($roleData ?? ['admin' => 0, 'user' => 0]) ?>;
   
-  // Global variable for the chart
+
   let myPieChart;
 
-  // Initialize the chart
+
   function initializeChart(roleData) {
     const ctx = document.getElementById('myPieChart').getContext('2d');
     myPieChart = new Chart(ctx, {
@@ -139,7 +138,6 @@
     });
   }
 
-  // Fetch updated role data and update the chart
   function updateChart() {
     fetch('<?= base_url("DasController/getRoleData") ?>')
       .then(response => response.json())
@@ -150,10 +148,10 @@
       .catch(error => console.error('Error updating chart:', error));
   }
 
-  // Initialize the chart with initial data
+
   initializeChart(roleData);
 
-  // Periodically update the chart (every 30 seconds)
+ 
   setInterval(updateChart, 30000);
 </script>
 

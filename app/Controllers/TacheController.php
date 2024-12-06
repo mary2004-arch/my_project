@@ -11,7 +11,15 @@ class TacheController extends BaseController
         $data['personalTaches'] = $tacheModel->where('type', 'personal')->findAll();
         $data['groupTaches'] = $tacheModel->where('type', 'group')->findAll(); 
     
-        
+        $userId = session()->get('user')['id'] ?? null;
+        $data['personalTaches'] = $tacheModel->where('type', 'personal')
+        ->where('utilisateur_id', $userId) 
+        ->findAll();
+
+$data['groupTaches'] = $tacheModel->where('type', 'group')
+    ->where('utilisateur_id', $userId) 
+    ->findAll();
+
         if ($this->request->getVar('edit_id')) {
             $task = $tacheModel->find($this->request->getVar('edit_id')); 
             if ($task) {
